@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "galeria-alma"
+    }
+  },
+  "defaultProject": "galeria-alma",
+  "cli": {
+    "analytics": "6dcf0273-48fc-4a31-b14b-aaaf7839ce4d"
+  }
 }
