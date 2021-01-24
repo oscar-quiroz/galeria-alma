@@ -1,18 +1,3 @@
 <div class="grid-gallery">
-
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
-    <app-card class="grid-gallery__item"></app-card>
+    <app-card *ngFor="let imgs of images" class="grid-gallery__item" [img]="imgs.img" [valor]="imgs.valor"></app-card>
 </div>
