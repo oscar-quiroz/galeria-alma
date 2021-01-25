@@ -9,6 +9,15 @@
     padding-right: 20px;
 }
 
+.grid-gallery__item {
+    transition: 0.5s;
+}
+
+.grid-gallery__item:hover {
+    transition: 0.5s;
+    transform: scale(1.06, 1.06);
+}
+
 .img-modal {
     display: block;
     margin-left: auto;
