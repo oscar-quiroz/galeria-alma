@@ -6,13 +6,35 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{valorB}}</h5>
+                <h3 class="modal-title" id="exampleModalLabel">Bralette hecho a mano 😍</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                    <span aria-hidden="true">&times;</span>
+                 </button>
             </div>
-            <div class="modal-body">
-                <img src="{{imagen}}" alt="" style="width: 350px;">
+            <div class="modal-body" style="display: block;">
+
+                <div>
+
+                    <ul>
+
+                        <li> Bralette tejido en crochet </li>
+                        <li> Hecho a tu medida</li>
+                        <li> Elije el color que desees</li>
+                        <li>
+                            <p>{{texto}} <span style="color: deeppink; font-size: 18px;"> ${{valorB}}</span></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img class="img-modal" src="{{imagen}}" alt="">
+                </div>
+                <div class="modal-button">
+
+                    <h4 style="margin:auto; margin-right: 15px;"> Contactanos: </h4>
+                    <a type="button" href="https://www.instagram.com/alma__crochet/" class="btn btn-outline-danger contact instagram"> <i class="fab fa-instagram  fa-2x"></i></a>
+                    <a type="button" class="btn btn-outline-success contact whatsapp"> <i class="fab fa-whatsapp  fa-2x"></i> </a>
+                </div>
             </div>
         </div>
     </div>
