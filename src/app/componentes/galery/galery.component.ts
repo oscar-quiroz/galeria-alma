@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Imagen } from 'src/app/interfaces/IBrallet';
 
 @Component({
   selector: 'app-galery',
@@ -9,8 +10,9 @@ export class GaleryComponent implements OnInit {
 
   images:any;
 
-  imagen:string = 'url de imagen ';
-  valor:string = '0'
+
+  imagen:string = '';
+  valorB:string = ''
 
   constructor() { 
     
@@ -178,8 +180,9 @@ export class GaleryComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  enviarImagen(img:string){
-	  this.imagen= img;
+  enviarImagen( img:Imagen ){
+	  this.imagen= img.img;
+	  this.valorB= img.valor;
   }
 
 }

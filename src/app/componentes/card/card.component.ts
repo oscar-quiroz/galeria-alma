@@ -1,4 +1,5 @@
 import { Component, OnInit,Input, Output, EventEmitter} from '@angular/core';
+import {Imagen} from '../../interfaces/IBrallet'
 
 @Component({
   selector: 'app-card',
@@ -11,22 +12,33 @@ import { Component, OnInit,Input, Output, EventEmitter} from '@angular/core';
 
 export class CardComponent implements OnInit {
 
- 
-
+  
   @Input() img:string = "";
   @Input() valor:string = "";
 
-  @Output() mostrar:EventEmitter<string> = new EventEmitter<string>();
+  imagenNueva:Imagen = {
+    img: '',
+    valor:''
+  }
+
+  @Output() imagen:EventEmitter<Imagen> = new EventEmitter<Imagen>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  mostrarDatos(){
-    console.log(this.img)
-    this.mostrar.emit(this.img );
+  obtenerImagen(){
+
+    this.imagenNueva= {
+      img: this.img,
+      valor:this.valor
+    }
+    //console.log(this.imagenNueva.valor, this.imagenNueva.img)
+    this.imagen.emit( this.imagenNueva )
   }
+
+
 
 }
 
